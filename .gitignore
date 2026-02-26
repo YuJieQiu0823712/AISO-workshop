@@ -1,0 +1,19 @@
+# Environment variables
+my_agent/.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# Evaluation results
+evaluation_results_*.json
+
+# Editor files
+.vscode/
+.cursor/
+.DS_Store
