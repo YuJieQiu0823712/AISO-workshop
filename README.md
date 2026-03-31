@@ -118,16 +118,12 @@ brew install uv
 
 ### 3. Configure your API key
 
-```bash
-cd my_agent
-cp .local_env .env   # Windows: copy .local_env .env
-```
-
-Open `my_agent/.env` and paste your API key:
+Create the file `my_agent/.env` and add your API key:
 
 ```
 GOOGLE_API_KEY="your_actual_api_key_here"
 ```
+
 
 ### 4. Install dependencies
 
@@ -323,8 +319,7 @@ AISO-workshop/
 │   ├── tools/             # Add custom tools here
 │   │   ├── __init__.py
 │   │   └── calculator.py  # Stub (implement in Milestone 2)
-│   ├── .local_env         # Example environment file
-│   └── .env               # Your API key (create from .local_env)
+│   └── .env               # Your API key (create this file — see Milestone 0)
 ├── benchmark/             # Benchmark dataset (read-only)
 │   ├── questions.json     # 16 evaluation questions
 │   └── attachments/       # Files referenced by some questions
@@ -361,7 +356,7 @@ uv sync
 
 **API key issues:**
 
-- Make sure you copied `.local_env` to `.env` in the `my_agent/` folder
+- Make sure `my_agent/.env` exists and contains `GOOGLE_API_KEY="your_key_here"`
 - Verify the API key is set correctly
 
 **Port already in use:**
